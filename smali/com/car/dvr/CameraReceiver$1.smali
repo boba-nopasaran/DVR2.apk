@@ -128,6 +128,15 @@
     goto :goto_1
 
     :pswitch_1
+	
+#by boba 07.01.2020
+#delay for P->D->P
+iget-object v3, p0, Lcom/car/dvr/CameraReceiver$1;->this$0:Lcom/car/dvr/CameraReceiver;
+iget-object v2, v3, Lcom/car/dvr/CameraReceiver;->mCarServiceImpl:Lcom/car/common/CarServiceImpl;
+invoke-virtual {v2, v4, v4, v5}, Lcom/car/common/CarServiceImpl;->requestScreen(ZZLjava/lang/String;)Z
+move-result v2
+iput-boolean v2, v3, Lcom/car/dvr/CameraReceiver;->mNeedRecover:Z	
+	
     invoke-static {}, Lcom/car/dvr/CameraReceiver;->getCarBackStatus()Z
 
     move-result v2
