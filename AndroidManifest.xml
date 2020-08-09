@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:sharedUserId="android.uid.system" coreApp="true" package="com.car.dvr" platformBuildVersionCode="22" platformBuildVersionName="5.1-1568030917">
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ"/>
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".DvrApplication">
+        <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.car.dvr.CameraActivity" android:stateNotNeeded="true" android:taskAffinity="com.car.dvr.CameraActivity" android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.dvr"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.car.dvr.CameraActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:icon="@drawable/ic_launcher" android:label="FloatService" android:name="com.car.dvr.FloatService">
+            <intent-filter>
+                <action android:name="com.car.dvr.FloatService"/>
+            </intent-filter>
+        </service>
+        <activity android:label="@string/camera_setting" android:name="com.car.dvr.CameraSetting" android:theme="@style/DialogTheme">
+            <intent-filter>
+                <action android:name="com.car.dvr.CameraSetting"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/history_record" android:name="com.car.dvr.browser.FileBrowser" android:theme="@style/HistoryTheme"/>
+        <activity android:name="com.car.dvr.browser.DateSelectActivity" android:theme="@style/DatePickerStyle"/>
+        <service android:name="com.car.dvr.CameraService">
+            <intent-filter>
+                <action android:name="com.car.dvr.CameraService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.car.dvr.CameraReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".FileBrowserForCapture">
+            <intent-filter>
+                <action android:name="com.car.dvr.capture"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.car.dvr.browser.FileCacheService"/>
+        <service android:name="com.adasplus.adas.adas.AdasService"/>
+    </application>
+</manifest>

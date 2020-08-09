@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/actionbar_back" android:background="@drawable/bg_focus_light_rectangle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <Spinner android:gravity="center" android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/actionbar_back" android:layout_centerVertical="true" />
+    <TabHost android:id="@android:id/tabhost" android:paddingBottom="4.0dip" android:layout_width="440.0dip" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_toRightOf="@id/spinner" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:divider="@drawable/divider" android:tabStripEnabled="true" android:showDividers="middle" />
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="28.0sp" android:id="@id/tag_double" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:id="@id/tag_front" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:id="@id/tag_back" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:id="@id/tag_left" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:id="@id/tag_right" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <TextView android:textSize="18.0sp" android:id="@id/tag_bido_lock" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

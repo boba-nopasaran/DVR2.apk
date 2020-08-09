@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="weekdays">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednseday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="months">
+        <item>January</item>
+        <item>Febrary</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="quality_entries">
+        <item>@string/quality_high</item>
+        <item>@string/quality_normal</item>
+    </string-array>
+    <string-array name="quality_values">
+        <item>@string/quality_high_value</item>
+        <item>normal</item>
+    </string-array>
+    <string-array name="sensitive_entries">
+        <item>@string/sensitive_high</item>
+        <item>@string/sensitive_normal</item>
+        <item>@string/sensitive_low</item>
+    </string-array>
+    <string-array name="sensitive_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="autosave_time_entries">
+        <item>@string/seconds_30</item>
+        <item>@string/minute_01</item>
+        <item>@string/minute_02</item>
+        <item>@string/minute_03</item>
+    </string-array>
+    <string-array name="autosave_time_values">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="autosleep_time_entries">
+        <item>@string/autosleep_15</item>
+        <item>@string/autosleep_30</item>
+        <item>@string/autosleep_60</item>
+        <item>@string/autosleep_never</item>
+    </string-array>
+    <string-array name="autosleep_time_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="stoppreview_time_entries">
+        <item>@string/stoppreview_30</item>
+        <item>@string/stoppreview_60</item>
+        <item>@string/stoppreview_120</item>
+        <item>@string/stoppreview_300</item>
+        <item>@string/stoppreview_never</item>
+    </string-array>
+    <string-array name="stoppreview_time_values">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="storage_entries">
+        <item>@string/storage_local</item>
+        <item>@string/storage_sdcard</item>
+    </string-array>
+    <string-array name="storage_values">
+        <item>local</item>
+        <item>sdcard</item>
+    </string-array>
+    <integer-array name="batterymeter_color_levels">
+        <item>4</item>
+        <item>15</item>
+        <item>100</item>
+    </integer-array>
+    <array name="batterymeter_color_values">
+        <item>#ffff3300</item>
+        <item>#ffff3300</item>
+        <item>#ffffffff</item>
+    </array>
+    <integer-array name="batterymeter_bolt_points">
+        <item>73</item>
+        <item>0</item>
+        <item>392</item>
+        <item>0</item>
+        <item>201</item>
+        <item>259</item>
+        <item>442</item>
+        <item>259</item>
+        <item>4</item>
+        <item>703</item>
+        <item>157</item>
+        <item>334</item>
+        <item>0</item>
+        <item>334</item>
+    </integer-array>
+    <string-array name="array_period">
+        <item>@string/range_all</item>
+        <item>@string/range_today</item>
+        <item>@string/range_1_week</item>
+        <item>@string/range_self_define</item>
+    </string-array>
+    <string-array name="scale_type_entries">
+        <item>@string/scale_type_best_fit</item>
+        <item>@string/scale_type_center</item>
+    </string-array>
+    <string-array name="scale_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

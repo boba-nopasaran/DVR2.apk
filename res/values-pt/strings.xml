@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DVR</string>
+    <string name="camera_name">Vídeo condução</string>
+    <string name="catalog_hot">Quente</string>
+    <string name="no_content_text">Nenhum conteúdo</string>
+    <string name="out_of_space">Não há espaço adequado na tela Home.</string>
+    <string name="camera_double">Dupla</string>
+    <string name="camera_front">Dianteira</string>
+    <string name="camera_back">Traseira</string>
+    <string name="camera_night">Noturna</string>
+    <string name="camera_switching">Switching câmara</string>
+    <string name="open_front_camera_failed">Câmara Dianteira em Falhou</string>
+    <string name="open_back_camera_failed">Câmara Traseira em Falhou</string>
+    <string name="no_camera_exist">Nenhuma Camera existe!</string>
+    <string name="erro_camera_mode">modo de câmera esta Erro!</string>
+    <string name="camera_service_error">Câmara de erro de conexão Service!</string>
+    <string name="front_camera_plug_in">Câmara Dianteira IN!</string>
+    <string name="front_camera_plug_out">Câmara Dianteira OUT!</string>
+    <string name="back_camera_plug_in">Câmara Traseira IN!</string>
+    <string name="back_camera_plug_out">Câmara Traseira OUT!</string>
+    <string name="back_camera_not_exist">Camara trasera não existe!</string>
+    <string name="front_camera_remove">Câmara Dianteira está conectado fora inesperado!</string>
+    <string name="back_camera_remove">Câmara Traseira está conectado fora inesperado!</string>
+    <string name="recoding_stop_by_storage_umount">A gravação parou porque \"<g id="part1">%1$s</g>\" está ligado para fora!</string>
+    <string name="storage_mounted">\"<g id="part1">%1$s</g>\" in!</string>
+    <string name="storage_umounted">\"<g id="part1">%1$s</g>\" out!</string>
+    <string name="photo_module">Modo foto</string>
+    <string name="video_module">Modo de vídeo</string>
+    <string name="calendar_day" />
+    <string name="camera_setting">Configurações de Vídeo</string>
+    <string name="version_title">versão</string>
+    <string name="close">Fechar</string>
+    <string name="error">Erro</string>
+    <string name="warning">Aviso</string>
+    <string name="front_quality_title">Vídeo câmera frontal de qualidade (vídeo após o reinício para ter efeito)</string>
+    <string name="back_quality_title">câmera de vídeo de qualidade (vídeo após o reinício para ter efeito)</string>
+    <string name="quality_dialog_title">Qualidade de vídeo</string>
+    <string name="quality_high">alta (1080P)</string>
+    <string name="quality_normal">normal (720P)</string>
+    <string name="quality_low">baixa (480P)</string>
+    <string name="sensitive_title">sensibilidade de detecção de colisão</string>
+    <string name="sensitive_dialog_title">GSensor sensibilidade configurações</string>
+    <string name="sensitive_high">muito sensível</string>
+    <string name="sensitive_normal">mais sensível</string>
+    <string name="sensitive_low">sensível</string>
+    <string name="tip_front_msg">Vídeo câmera frontal de qualidade são：<g id="part1">%1$s</g>！</string>
+    <string name="tip_back_msg">qualidade de vídeo da câmera é：<g id="part1">%1$s</g>！</string>
+    <string name="storage_title">Vídeo Save Path</string>
+    <string name="storage_dialog_title">Vídeo Save Path</string>
+    <string name="storage_local">Local</string>
+    <string name="storage_sdcard">cartão SD</string>
+    <string name="tip_storage_path_msg">caminho de armazenamento de vídeo atual é：<g id="part1">%1$s</g>！</string>
+    <string name="storage_not_exist_msg">armazenamento: <g id="part1">%1$s</g> não existe!</string>
+    <string name="autosave_time_title">Auto Save Time (efeito de vídeo após a reinicialização)</string>
+    <string name="autosave_time_dialog_title">Auto Save Time</string>
+    <string name="minute_01">1 minutos</string>
+    <string name="minute_02">2 minutos</string>
+    <string name="minute_03">3 minutos</string>
+    <string name="minute_05">5 minutos</string>
+    <string name="tip_recording_time_msg">gravação, o intervalo<g id="part1">%1$s</g>uma loja de vídeo!</string>
+    <string name="autosleep_time_title">Auto sono</string>
+    <string name="autosleep_time_dialog_title">Auto sono</string>
+    <string name="autosleep_10">Parar após 10 minutos</string>
+    <string name="autosleep_15">parar após 15 minutos</string>
+    <string name="autosleep_20">parar após 20 minutos</string>
+    <string name="autosleep_30">parar após 30 minutos</string>
+    <string name="autosleep_60">parar após 60 minutos</string>
+    <string name="autosleep_never">No Parking Auto sono</string>
+    <string name="stoppreview_time_title">pré-visualização Auto Sair</string>
+    <string name="stoppreview_time_dialog_title">pré-visualização Auto Sair</string>
+    <string name="stoppreview_30">nenhuma operação após 30 segundos</string>
+    <string name="stoppreview_60">nenhuma operação durante 1 minuto</string>
+    <string name="stoppreview_120">nenhuma operação após 2 minutos</string>
+    <string name="stoppreview_300">qualquer operação durante 5 minutos</string>
+    <string name="stoppreview_never">Desativar pré-visualização Exit automática</string>
+    <string name="mute_record">Mudo</string>
+    <string name="auto_start_record">automaticamente iniciar a gravação</string>
+    <string name="show_float_button">Mostrar flutuante botões</string>
+    <string name="flash_light">Desativar luzes</string>
+    <string name="gsensor">Permitir esteira de colisão</string>
+    <string name="summary_restart_recording">vídeo em vigor após o reinício</string>
+    <string name="recording_time"><g id="part1">%1$s</g> <g id="part2">%2$s</g></string>
+    <string name="dual_recording">Dual</string>
+    <string name="front_recording">Frente</string>
+    <string name="back_recording">de volta</string>
+    <string name="dual_recording_night">Noite</string>
+    <string name="history_record">Histórico Registro</string>
+    <string name="upfolder">Acima</string>
+    <string name="display_mode_grid">Grade</string>
+    <string name="display_mode_list">Lista</string>
+    <string name="empty_folder">Pasta vazia</string>
+    <string name="date_title">Encontro: <g id="part1">%1$s</g></string>
+    <string name="size_title">Tamanho: <g id="part1">%1$s</g></string>
+    <string name="duration_title">Duração: <g id="part1">%1$s</g></string>
+    <string name="ok">ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Excluir</string>
+    <string name="select_all">Selecionar tudo</string>
+    <string name="multiselected_num">Seleccionado(<g id="percent">%1$s</g>)</string>
+    <string name="open_fail">Falhou abrir arquivo</string>
+    <string name="confirm">Confirmar</string>
+    <string name="delete_dialog_msg">Excluindo ...</string>
+    <string name="delete_confirm">Tem certeza que deseja deletar \"%s\"?</string>
+    <string name="delete_failed">Excluir falhou!</string>
+    <string name="delete_success">Excluir sucesso!</string>
+    <string name="delete_all_confirm">Tem certeza que deseja excluir todos os itens selecionados?</string>
+    <string name="select_none_file">Nenhum arquivo é selecionado!</string>
+    <string name="fail_to_delete_protected_file">Excluir Falha! O arquivo está protegido!</string>
+    <string name="adapter_off">Adaptador é removido e será suspenso após %1$d segundos</string>
+    <string name="car_stopped_off">Carro em movimento não é detectado nos últimos %1$d minutos e seria suspenso após %2$d segundos para poupança de energia</string>
+    <string name="tip_time_h">" "</string>
+    <string name="tip_time_m">" "</string>
+    <string name="tip_float_button">Clique no botão flutuante para assistir a pré-visualização da câmera a partir da janela do flutuador</string>
+    <string name="tip_float_view">clique único para alternar câmera e dê um duplo clique para entrar DVR</string>
+    <string name="tip_start_record">Gravação de Vídeo Iniciar</string>
+    <string name="tip_stop_record">Vídeo Stop Recording</string>
+    <string name="tip_camera_front">Mudar para câmera frontal</string>
+    <string name="tip_camera_night">Mudar para visão noturna</string>
+    <string name="tip_camera_double">Comutação Dual Camera</string>
+    <string name="tip_camera_switch">Comutação câmara</string>
+    <string name="tip_camera_back">Mudar para câmera traseira</string>
+    <string name="tip_defult_map">%S estiver definido como padrão para a navegação, muito tempo pressionando em GPS pode repô-la</string>
+    <string name="tip_video_record">Condução de gravação de vídeo</string>
+    <string name="tip_insert_sdcard">Por favor, insira o cartão SD</string>
+    <string name="tip_collision">Crashed Vídeo Locked</string>
+    <string name="tip_lock">bloqueio de vídeo</string>
+    <string name="tip_sdcard_full">espaço no cartão SD não é suficiente e, por favor gerenciá-lo</string>
+    <string name="tip_sdcard_format">espaço no cartão SD não é suficiente e formate-</string>
+    <string name="tip_sdcard_slow">cartão SD é lenta para leitura e escrita, por favor, formatá-lo imediatamente ou alterá-lo</string>
+    <string name="tip_record_stopped">cartão SD é lenta para leitura e escrita, por favor, alterá-lo, Gravação interrompida</string>
+    <string name="tip_stop_preview">Pré-visualização sair para economizar energia</string>
+    <string name="tip_background_recording">a gravação de fundo</string>
+    <string name="accessibility_switch_to_camera">Mudar para foto</string>
+    <string name="accessibility_switch_to_video">Mudar para vídeo</string>
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+    <string name="date_select_title">Selecionar data</string>
+    <string name="start_date_prefix">Data de início：</string>
+    <string name="end_date_prefix">Data de Término：</string>
+    <string name="date_select_error">data de abertura do que a data final cedo!</string>
+    <string name="d_camera">câmera dupla</string>
+    <string name="f_camera">antes de a câmera</string>
+    <string name="b_camera">câmera traseira</string>
+    <string name="range_all">Todos</string>
+    <string name="range_today">Hoje</string>
+    <string name="range_1_week">na semana passada</string>
+    <string name="range_self_define">Personalizado</string>
+    <string name="home_nav">Navegação GPS</string>
+    <string name="home_dvr">Condução Video</string>
+    <string name="home_bt">telefones Bluetooth</string>
+    <string name="home_apps">Aplicações</string>
+    <string name="home_fm">transmissor FM</string>
+    <string name="music_widget_initial_text">Clique aqui para escolher a música.</string>
+    <string name="sleep_dialog_title">Sleep contagem regressiva</string>
+    <string name="sleep_dialog_text">sistema será em breve forçado dormente</string>
+    <string name="sleep_dialog_ok">imediatamente dormente</string>
+    <string name="sleep_dialog_cancel">Cancelar sono</string>
+    <string name="storage_format">Formato</string>
+    <string name="storage_manage">Gerenciamento de Armazenamento</string>
+    <string name="setting">Configurações</string>
+    <string name="gps_watermark">Exibir informações de marca dágua GPS</string>
+    <string name="adas_calibration">Recalibragem do ADAS</string>
+    <string name="adas_report">Sinal sobre uma possível colisão</string>
+    <string name="adas_report2">Sinal sobre a mudança de trajetória</string>
+    <string name="adas_report3">Sinaliza o início do movimento na frente do carro</string>
+    <string name="adas">ADAS</string>
+    <string name="adas_forward_collision">Aviso! Perigo!</string>
+    <string name="adas_lane_departure">Foque na marcação!</string>
+    <string name="adas_forward_vehicle_moving">o movimento começou</string>
+    <string name="check">Calibrar ADAS</string>
+    <string name="double_tap_fullscreen">Modo de tela cheia acionado por um toque duplo</string>
+    <string name="preview_scale_type_title">Visualização de corte (é necessário reinicializar)</string>
+    <string name="scale_type_dialog_title">Pré-visualização de corte</string>
+</resources>

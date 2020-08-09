@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/adas_calibration" android:key="adas_calibration" />
+    <CheckBoxPreference android:title="@string/adas_report" android:key="adas_report" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/adas_report2" android:key="adas_report2" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/adas_report3" android:key="adas_report3" android:defaultValue="true" />
+</PreferenceScreen>

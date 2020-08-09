@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/flowViewParent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.car.dvr.FloatView android:id="@id/floatView" android:layout_width="400.0dip" android:layout_height="240.0dip" />
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_drawable" android:layout_alignTop="@id/floatView" android:layout_alignRight="@id/floatView" />
+    </RelativeLayout>
+    <ImageView android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/recording_off" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="cellCountY">9</integer>
+    <integer name="translate_time">150</integer>
+    <integer name="alpha_time">100</integer>
+    <integer name="animation_tag">1000</integer>
+    <integer name="sensitive_low">29</integer>
+    <integer name="sensitive_normal">26</integer>
+    <integer name="sensitive_high">23</integer>
+</resources>

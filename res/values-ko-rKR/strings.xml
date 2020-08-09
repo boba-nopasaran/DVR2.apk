@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DVR</string>
+    <string name="camera_name">주행녹화</string>
+    <string name="catalog_hot">Hot</string>
+    <string name="no_content_text">No Content</string>
+    <string name="out_of_space">No proper room on this Home screen.</string>
+    <string name="camera_double">앞뒤카메라</string>
+    <string name="camera_front">앞카메라</string>
+    <string name="camera_back">뒤카메라</string>
+    <string name="camera_night">야간관측</string>
+    <string name="camera_switching">카메라 교체중</string>
+    <string name="open_front_camera_failed">“앞카메라”열기실패！</string>
+    <string name="open_back_camera_failed">“뒷카메라”열기 실패！</string>
+    <string name="no_camera_exist">카메라가 존재하지 않음！</string>
+    <string name="erro_camera_mode">모드착오！</string>
+    <string name="camera_service_error">카메라 연결실패！</string>
+    <string name="front_camera_plug_in">“앞카메라”를 이미 꽂았음.</string>
+    <string name="front_camera_plug_out">“앞카메라”를 이미 뽑았음.</string>
+    <string name="back_camera_plug_in">“뒷카메라”이미 꽂았음.</string>
+    <string name="back_camera_plug_out">“뒷카메라” 이미 뽑았음.</string>
+    <string name="back_camera_not_exist">“뒷카메라”가 없음.</string>
+    <string name="front_camera_remove">“앞카메라”가 비정상적으로 뽑혔음！</string>
+    <string name="back_camera_remove">“뒷카메라가” 비정상적으로 뽑혔음！</string>
+    <string name="recoding_stop_by_storage_umount">“녹화정지”，<g id="part1">%1$s</g> 비정상적으로 뽑혔음！</string>
+    <string name="storage_mounted">\"<g id="part1">%1$s</g>\" 꽂기！</string>
+    <string name="storage_umounted">\"<g id="part1">%1$s</g>\" 빼기！</string>
+    <string name="photo_module">“사진찍기”모드</string>
+    <string name="video_module">“녹화”모드</string>
+    <string name="calendar_day">일</string>
+    <string name="camera_setting">녹화설정</string>
+    <string name="version_title">버전번호</string>
+    <string name="close">닫기</string>
+    <string name="error">착오</string>
+    <string name="warning">경고</string>
+    <string name="front_quality_title">앞카메라의 녹화질(녹화 재가동후 유효)</string>
+    <string name="back_quality_title">뒷카메라의 녹화질(녹화 재가동후 유효)</string>
+    <string name="quality_dialog_title">녹화질</string>
+    <string name="quality_high">높음（1080P）</string>
+    <string name="quality_normal">일반（720P）</string>
+    <string name="quality_low">낮음（480P）</string>
+    <string name="sensitive_title">충돌검측민감도</string>
+    <string name="sensitive_dialog_title">Gsensor민감도설정</string>
+    <string name="sensitive_high">아주 민감함</string>
+    <string name="sensitive_normal">비교적 민감함</string>
+    <string name="sensitive_low">민감함</string>
+    <string name="tip_front_msg">앞카메라의 녹화질은：<g id="part1">%1$s</g>！</string>
+    <string name="tip_back_msg">뒷카메라의 녹화질은：<g id="part1">%1$s</g>！</string>
+    <string name="storage_title">녹화저장경로</string>
+    <string name="storage_dialog_title">녹화저장경로</string>
+    <string name="storage_local">본지</string>
+    <string name="storage_sdcard">SD카드</string>
+    <string name="tip_storage_path_msg">기존 녹화저장경로는：<g id="part1">%1$s</g>！</string>
+    <string name="storage_not_exist_msg">저장설비：<g id="part1">%1$s</g> 없음！</string>
+    <string name="autosave_time_title">자동저장시간(녹화 재가동후 유효함.)</string>
+    <string name="autosave_time_dialog_title">자동저장시간</string>
+    <string name="minute_01">1 분</string>
+    <string name="minute_02">2 분</string>
+    <string name="minute_03">3 분</string>
+    <string name="minute_05">5 분</string>
+    <string name="tip_recording_time_msg">녹화시，매 <g id="part1">%1$s</g>마다 한번씩 녹화저장！</string>
+    <string name="autosleep_time_title">자동휴면</string>
+    <string name="autosleep_time_dialog_title">자동휴면</string>
+    <string name="autosleep_10">주차10분후</string>
+    <string name="autosleep_15">주차15분후</string>
+    <string name="autosleep_20">주차20분후</string>
+    <string name="autosleep_30">주차30분후</string>
+    <string name="autosleep_60">주차60분후</string>
+    <string name="autosleep_never">주차시 자동휴면 금지</string>
+    <string name="stoppreview_time_title">미리 보기에서 자동으로 로그아웃</string>
+    <string name="stoppreview_time_dialog_title">미리 보기에서 자동으로 로그아웃</string>
+    <string name="stoppreview_30">30초후</string>
+    <string name="stoppreview_60">불사용 1분후</string>
+    <string name="stoppreview_120">불사용 2분후</string>
+    <string name="stoppreview_300">불사용 5분후</string>
+    <string name="stoppreview_never">미리 보기 자동로그아웃 금지</string>
+    <string name="mute_record">음소거 녹화</string>
+    <string name="auto_start_record">자동녹화시작</string>
+    <string name="show_float_button">플로트버튼 디스플레이</string>
+    <string name="flash_light">조명보충램프 사용금지</string>
+    <string name="gsensor">충돌시 주의허락</string>
+    <string name="summary_restart_recording">녹화 재가동후 유효.</string>
+    <string name="recording_time"><g id="part1">%1$s</g> <g id="part2">%2$s</g></string>
+    <string name="dual_recording">앞뒤</string>
+    <string name="front_recording">앞</string>
+    <string name="back_recording">뒤</string>
+    <string name="dual_recording_night">야간관측</string>
+    <string name="history_record">역사기록</string>
+    <string name="upfolder">앞으로 가기</string>
+    <string name="display_mode_grid">네트워크</string>
+    <string name="display_mode_list">리스트</string>
+    <string name="empty_folder">빈 파일</string>
+    <string name="date_title">Date: <g id="part1">%1$s</g></string>
+    <string name="size_title">Size: <g id="part1">%1$s</g></string>
+    <string name="duration_title">시간: <g id="part1">%1$s</g></string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="delete">삭제</string>
+    <string name="select_all">전부 선택</string>
+    <string name="multiselected_num">이미 선택(<g id="percent">%1$s</g>)</string>
+    <string name="open_fail">파일열기 실패</string>
+    <string name="confirm">확인</string>
+    <string name="delete_dialog_msg">삭제중...</string>
+    <string name="delete_confirm">정말 \"%s\"을 삭제하시렵니까？</string>
+    <string name="delete_failed">삭제실패</string>
+    <string name="delete_success">삭제성공</string>
+    <string name="delete_all_confirm">선택한 모든 항목을 전부 삭제하시렵니까？</string>
+    <string name="select_none_file">선택한 파일이 없음.</string>
+    <string name="fail_to_delete_protected_file">파일삭제실패，파일은 보호를 받음！</string>
+    <string name="adapter_off">전원을 연결하지 않았음，%1$d초후 휴면상태에 진입.</string>
+    <string name="car_stopped_off">지나간 %1$d분내에 차량이동을 확인하지 못했음.전기절약을 위해 %2$d초후 바로 휴면상태에 진입.</string>
+    <string name="tip_time_h">시</string>
+    <string name="tip_time_m">분</string>
+    <string name="tip_float_button">플로트버튼을 클릭하여 플로트창구를 통해 카메라화면 미리 보기.</string>
+    <string name="tip_float_view">플로트창구를 한번 클릭하여 카메라를 전환한후 플로트창구를 두번 클릭하여 주행기록기 인터페이스에 들어감.</string>
+    <string name="tip_start_record">녹화시작</string>
+    <string name="tip_stop_record">녹화중단</string>
+    <string name="tip_camera_front">앞카메라로 전환</string>
+    <string name="tip_camera_night">야간관측모드로 전환</string>
+    <string name="tip_camera_double">앞뒤카메라로 전환</string>
+    <string name="tip_camera_switch">카메라전환</string>
+    <string name="tip_camera_back">뒷카메라로 전환</string>
+    <string name="tip_defult_map">%s을 기본 네비게이션프로그램으로 설정하였으니 GPS를 오래 눌러 새로 설정할수 있음.</string>
+    <string name="tip_video_record">주행기록기</string>
+    <string name="tip_insert_sdcard">SD카드를 꽂아주세요.</string>
+    <string name="tip_collision">충돌동영상잠그기</string>
+    <string name="tip_lock">녹화잠그기</string>
+    <string name="tip_sdcard_full">SD카드의 사용공간이 부족하므로 SD카드를 정리해주세요.</string>
+    <string name="tip_sdcard_format">SD카드의 사용공간이 50%보다 적음，SD카드를 격식화해주세요.</string>
+    <string name="tip_sdcard_slow">SD카드의 읽기와 쓰기속도가 너무 느림，바로 격식화하거나 SD카드를 교체할것을 권장함.</string>
+    <string name="tip_record_stopped">SD카드의 읽기와 쓰기 속도가 너무 느림，SD카드 교체바람，녹화는 이미 중지했음.</string>
+    <string name="tip_stop_preview">전기절약을 위해 자동적으로 미리 보기에서 로그아웃됨.</string>
+    <string name="tip_background_recording">백스테이지 녹화 계속 진행.</string>
+    <string name="accessibility_switch_to_camera">Switch to photo</string>
+    <string name="accessibility_switch_to_video">Switch to video</string>
+    <string name="time_am">오전</string>
+    <string name="time_pm">오후</string>
+    <string name="date_select_title">날자선택</string>
+    <string name="start_date_prefix">시작일자：</string>
+    <string name="end_date_prefix">마감일자：</string>
+    <string name="date_select_error">“가동일자”가 “마감일자”보다 이름!</string>
+    <string name="d_camera">앞뒤카메라</string>
+    <string name="f_camera">앞카메라</string>
+    <string name="b_camera">뒷카메라</string>
+    <string name="range_all">전부</string>
+    <string name="range_today">오늘</string>
+    <string name="range_1_week">최근 1주</string>
+    <string name="range_self_define">자체정의</string>
+    <string name="home_nav">GPS네비게이션</string>
+    <string name="home_dvr">주행녹화</string>
+    <string name="home_bt">블루투스전화</string>
+    <string name="home_apps">응용</string>
+    <string name="home_fm">FM발사</string>
+    <string name="music_widget_initial_text">이곳을 클릭하여 음악을 선택해주세요.</string>
+    <string name="sleep_dialog_title">휴면 카튼다운</string>
+    <string name="sleep_dialog_text">시스템이 곧 강제휴면상태에 진입함.</string>
+    <string name="sleep_dialog_ok">바로 휴면</string>
+    <string name="sleep_dialog_cancel">휴면취소</string>
+    <string name="storage_format">격식화</string>
+    <string name="storage_manage">저장관리</string>
+    <string name="setting">설정</string>
+    <string name="gps_watermark">GPS워터마크정보표시</string>
+    <string name="adas_calibration">ADAS 재 교정</string>
+    <string name="adas_report">충돌 가능성에 대한 신호</string>
+    <string name="adas_report2">탄도의 변화에 ​​대한 신호</string>
+    <string name="adas_report3">자동차 앞에서 운동 시작 신호</string>
+    <string name="adas">ADAS</string>
+    <string name="adas_forward_collision">경고! 위험!</string>
+    <string name="adas_lane_departure">마크 업에 집중하십시오!</string>
+    <string name="adas_forward_vehicle_moving">이동을 시작하기 전에!</string>
+    <string name="check">ADAS 조정</string>
+    <string name="double_tap_fullscreen">두 번 탭하여 전체 화면 모드 실행</string>
+    <string name="preview_scale_type_title">자르기 미리보기 (재부팅 필요)</string>
+    <string name="scale_type_dialog_title">자르기 미리보기</string>
+</resources>

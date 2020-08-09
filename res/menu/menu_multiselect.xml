@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/checkbox_empty" android:id="@id/mul_menu_select_all" android:title="@string/select_all" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/menu_delete" android:id="@id/mul_menu_delete" android:title="@string/delete" android:showAsAction="ifRoom" />
+</menu>

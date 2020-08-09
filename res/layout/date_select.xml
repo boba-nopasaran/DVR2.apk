@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_gray_round_corner" android:layout_width="540.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/datepicker_header_height" android:layout_marginLeft="@dimen/round_cornor_radius" android:layout_marginRight="@dimen/round_cornor_radius">
+        <TextView android:textSize="20.0sp" android:textColor="@color/dialog_title_text" android:layout_gravity="center|left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/date_select_title" />
+    </FrameLayout>
+    <TextView android:background="@color/dialog_title_text" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <DatePicker android:layout_gravity="center_horizontal" android:id="@id/start_date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnersShown="true" android:calendarViewShown="false" />
+            <TextView android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/start_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+        </LinearLayout>
+        <TextView android:background="#66aaaaaa" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <DatePicker android:layout_gravity="center_horizontal" android:id="@id/end_date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnersShown="true" android:calendarViewShown="false" />
+            <TextView android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/end_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/dialog_title_text" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <Button android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/ok" android:background="@drawable/bg_focus_dialog_rectangle" android:layout_width="fill_parent" android:layout_height="@dimen/datepicker_header_height" android:layout_marginLeft="@dimen/round_cornor_radius" android:layout_marginRight="@dimen/round_cornor_radius" android:text="@android:string/ok" />
+</LinearLayout>

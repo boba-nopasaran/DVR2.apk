@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="480.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/ic_setting" android:scaleType="fitXY" />
+        <TextView android:textAppearance="@android:style/TextAppearance.Large" android:textColor="#aa33b5e5" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biaoding_data" />
+    </LinearLayout>
+    <TextView android:background="#aa33b5e5" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/cw" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cw" android:layout_weight="1.5" />
+        <EditText android:id="@id/cw_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+        <TextView android:id="@id/ch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ch" android:layout_weight="1.5" />
+        <EditText android:id="@id/ch_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/c2cw" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/c2cw" android:layout_weight="1.5" />
+        <EditText android:id="@id/c2cw_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+        <TextView android:id="@id/c2gh" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/c2gh" android:layout_weight="1.5" />
+        <EditText android:id="@id/c2gh_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/c2bh" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/c2bh" android:layout_weight="1.5" />
+        <EditText android:id="@id/c2bh_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+        <TextView android:id="@id/c2bw" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/c2bw" android:layout_weight="1.5" />
+        <EditText android:id="@id/c2bw_edit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" android:inputType="numberDecimal">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <TextView android:background="#aa33b5e5" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="12.0dip" />
+    <Button android:textAppearance="@android:style/TextAppearance.Large" android:id="@id/close" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/ok" />
+</LinearLayout>
