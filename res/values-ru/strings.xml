@@ -92,7 +92,7 @@
     <string name="front_scale_type_dialog_title">Отображение передней камеры</string>
     <string name="back_scale_type_dialog_title">Отображение тыловой камеры</string>
     <string name="recording_time"><g id="part1">%1$s</g> <g id="part2">%2$s</g></string>
-    <string name="dual_recording">Дуплет</string>
+    <string name="dual_recording">Обе</string>
     <string name="front_recording">Фронт</string>
     <string name="back_recording">Тыл</string>
     <string name="recording3">Триплет</string>
@@ -189,4 +189,8 @@
     <string name="double_tap_fullscreen">Полноэкранный режим вызывается двойным тапом</string>
     <string name="preview_scale_type_title">Кадрирование предпросмотра (Требуется перезагрузка)</string>
     <string name="scale_type_dialog_title">Кадрирование предпросмотра</string>
+<!-- by boba 10.08.2020
+select acc on cam -->
+    <string name="acc_on_cam_title">Показывать камеру при включении</string>
+    <string name="acc_on_cam_dialog_title">Выбор камеры при включении</string>	
 </resources>

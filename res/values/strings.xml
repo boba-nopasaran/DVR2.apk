@@ -233,4 +233,8 @@
     <string name="c2gh">摄像头到地面高度(C2GH)：</string>
     <string name="c2bh">车尾到标定板的距离(C2BH)：</string>
     <string name="c2bw">车边缘到标定板边缘的距离(C2BW)：</string>
+<!-- by boba 10.08.2020
+select acc on cam -->
+    <string name="acc_on_cam_title">Show cam ACC on</string>
+    <string name="acc_on_cam_dialog_title">Select cam ACC on</string>		
 </resources>
