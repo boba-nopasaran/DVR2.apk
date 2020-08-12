@@ -61,6 +61,12 @@
 
 .field private static mPreviewBestfitEnable:Z
 
+#by boba 12.08.2020
+#text watermark
+.field private static final KEY_TEXT_WATERMARK:Ljava/lang/String; = "text_watermark"
+.field private static final PROP_TEXT_WATERMARK:Ljava/lang/String; = "rw.product.watermark.model"
+.field private mTextWatermark:Landroid/preference/EditTextPreference;
+
 #by boba 10.08.2020
 #select acc on cam
 .field private static final KEY_ACC_ON_CAM:Ljava/lang/String; = "acc_on_cam"
@@ -455,6 +461,15 @@
     move/from16 v1, v17
 
     invoke-virtual {v0, v1}, Lcom/car/dvr/GenericFragment;->addPreferencesFromResource(I)V
+
+#by boba 12.08.2020
+#text watermark
+move-object/from16 v0, p0
+const-string v1, "text_watermark"
+invoke-virtual {v0, v1}, Lcom/car/dvr/GenericFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+move-result-object v1
+check-cast v1, Landroid/preference/EditTextPreference;
+iput-object v1, v0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
 
 #by boba 10.08.2020
 #select acc on cam
@@ -1539,6 +1554,15 @@ iput-object v1, v0, Lcom/car/dvr/GenericFragment;->mAccOnCamPreference:Landroid/
 
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
+#by boba 12.08.2020
+#text watermark
+const-string v5, "rw.product.watermark.model"
+const-string v4, ""
+invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+move-result-object v4
+iget-object v5, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
+invoke-virtual {v5, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+
 #by boba 10.08.2020
 #select acc on cam
 const-string v5, "persist.acc.on.cam.fullscreen"
@@ -2395,7 +2419,7 @@ invoke-virtual {v5, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/l
 
     move-result v0
 
-    if-eqz v0, :cond_100
+    if-eqz v0, :cond_101
 
     const-string v1, "persist.right_cam.ver_mir"
 
@@ -2419,6 +2443,20 @@ invoke-virtual {v5, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/l
 
     goto :goto_4
 	
+#by boba 10.08.2020
+#select acc on cam
+:cond_101
+const-string v0, "text_watermark"
+invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+move-result v0
+if-eqz v0, :cond_100
+iget-object v1, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
+const-string v0, "rw.product.watermark.model"
+invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+move-result-object v1
+invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+goto/16 :goto_0
+
 #by boba 10.08.2020
 #select acc on cam
 :cond_100

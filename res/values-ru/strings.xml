@@ -189,6 +189,9 @@
     <string name="double_tap_fullscreen">Полноэкранный режим вызывается двойным тапом</string>
     <string name="preview_scale_type_title">Кадрирование предпросмотра (Требуется перезагрузка)</string>
     <string name="scale_type_dialog_title">Кадрирование предпросмотра</string>
+<!-- by boba 12.08.2020
+text watermark -->
+    <string name="text_watermark">Текстовая метка в видеофайле</string>
 <!-- by boba 10.08.2020
 select acc on cam -->
     <string name="acc_on_cam_title">Показывать камеру при включении</string>
