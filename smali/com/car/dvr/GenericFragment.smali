@@ -64,7 +64,7 @@
 #by boba 12.08.2020
 #text watermark
 .field private static final KEY_TEXT_WATERMARK:Ljava/lang/String; = "text_watermark"
-.field private static final PROP_TEXT_WATERMARK:Ljava/lang/String; = "rw.product.watermark.model"
+.field private static final PROP_TEXT_WATERMARK:Ljava/lang/String; = "persist.dvr.watermark"
 .field private mTextWatermark:Landroid/preference/EditTextPreference;
 
 #by boba 10.08.2020
@@ -1556,7 +1556,7 @@ iput-object v1, v0, Lcom/car/dvr/GenericFragment;->mAccOnCamPreference:Landroid/
 
 #by boba 12.08.2020
 #text watermark
-const-string v5, "rw.product.watermark.model"
+const-string v5, "persist.dvr.watermark"
 const-string v4, ""
 invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 move-result-object v4
@@ -2451,7 +2451,7 @@ invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 move-result v0
 if-eqz v0, :cond_100
 iget-object v1, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
-const-string v0, "rw.product.watermark.model"
+const-string v0, "persist.dvr.watermark"
 invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 move-result-object v1
 invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
