@@ -1562,6 +1562,7 @@ invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Lja
 move-result-object v4
 iget-object v5, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
 invoke-virtual {v5, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+invoke-virtual {v5, v4}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
 #by boba 10.08.2020
 #select acc on cam
@@ -2453,8 +2454,9 @@ if-eqz v0, :cond_100
 iget-object v1, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
 const-string v0, "persist.dvr.watermark"
 invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
-move-result-object v1
-invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+move-result-object v2
+invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
+invoke-static {v0, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 goto/16 :goto_0
 
 #by boba 10.08.2020
