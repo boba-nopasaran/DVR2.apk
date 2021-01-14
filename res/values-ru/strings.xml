@@ -2,62 +2,60 @@
 <resources>
     <string name="app_name">DVR</string>
     <string name="camera_name">Запись</string>
-    <string name="catalog_hot">Hot</string>
+    <string name="catalog_hot">Горячее</string>
     <string name="no_content_text">Нет содержания</string>
     <string name="out_of_space">Нет места на главном экране</string>
     <string name="camera_double">Две камеры</string>
-    <string name="camera_front">Фронт.кам.</string>
-    <string name="camera_back">Задн.кам.</string>
-    <string name="camera_night">Ночная съемка</string>
+    <string name="camera_front">Передняя</string>
+    <string name="camera_back">Задняя</string>
     <string name="camera_switching">Переключение камеры</string>
-    <string name="open_front_camera_failed">Ошибка фронтальной камеры</string>
+    <string name="open_front_camera_failed">Ошибка передней камеры</string>
     <string name="open_back_camera_failed">Ошибка задней камеры</string>
     <string name="no_camera_exist">Камера не подключена!</string>
-    <string name="erro_camera_mode">Ошибка камеры！</string>
-    <string name="camera_service_error">Ошибка соединения с камерой！</string>
-    <string name="front_camera_plug_in">Подключена фронтальная камера</string>
-    <string name="front_camera_plug_out">Отключена фронтальная камера</string>
+    <string name="erro_camera_mode">Ошибка камеры!</string>
+    <string name="camera_service_error">Ошибка соединения с камерой!</string>
+    <string name="front_camera_plug_in">Подключена передняя камера</string>
+    <string name="front_camera_plug_out">Отключена передняя камера</string>
     <string name="back_camera_plug_in">Подключена задняя камера</string>
     <string name="back_camera_plug_out">Отключена задняя камера</string>
     <string name="back_camera_not_exist">Задняя камера не подключена</string>
-    <string name="front_camera_remove">Отключение фронтальной камеры</string>
+    <string name="front_camera_remove">Отключение передней камеры</string>
     <string name="back_camera_remove">Отключение задней камеры</string>
-    <string name="recoding_stop_by_storage_umount">Остановка записи, потому что <g id="part1">%1$s</g>тключена！</string>
-    <string name="storage_mounted">\"<g id="part1">%1$s</g>\" подключите！</string>
-    <string name="storage_umounted">\"<g id="part1">%1$s</g>\" отключите！</string>
+    <string name="recoding_stop_by_storage_umount">Остановка записи, потому что <g id="part1">%1$s</g>тключена!</string>
+    <string name="storage_mounted">\"<g id="part1">%1$s</g>\" подключите!</string>
+    <string name="storage_umounted">\"<g id="part1">%1$s</g>\" отключите!</string>
     <string name="photo_module">Режим Фото</string>
     <string name="video_module">Режим Видео</string>
-    <string name="calendar_day">День</string>
-    <string name="camera_setting">Настройка видео</string>
+    <string name="camera_setting">Настройка камеры</string>
     <string name="version_title">Версия</string>
     <string name="close">Закрыть</string>
     <string name="error">Ошибка</string>
     <string name="warning">Предупреждение</string>
-    <string name="front_quality_title">Качество видео фронтальной камеры (Изменения вступят в силу после перезагрузки)</string>
-    <string name="back_quality_title">Качество видео задней камеры (Изменения вступят в силу после перезагрузки))</string>
+    <string name="front_quality_title">Качество видео передней камеры (перезагрузка)</string>
+    <string name="back_quality_title">Качество видео задней камеры (перезагрузка)</string>
     <string name="quality_dialog_title">Качество видео</string>
     <string name="quality_high">Высокое（1080P）</string>
     <string name="quality_normal">Среднее（720P）</string>
     <string name="quality_low">Низкое（480P）</string>
     <string name="sensitive_title">Чувствительность обнаружения столкновения</string>
-    <string name="sensitive_dialog_title">Настройка чувствительности G-сенсора</string>
+    <string name="sensitive_dialog_title">Настройка чувствительности датчика удара</string>
     <string name="sensitive_high">Высокая</string>
     <string name="sensitive_normal">Нормальная</string>
     <string name="sensitive_low">Низкая</string>
-    <string name="tip_front_msg">Качество видео фронтальной камеры：<g id="part1">%1$s</g>！</string>
-    <string name="tip_back_msg">Качество видео задней камеры：<g id="part1">%1$s</g>！</string>
-    <string name="storage_title">Путь Фр</string>
-    <string name="storage_dialog_title">Путь сохранения видео</string>
+    <string name="tip_front_msg">Качество видео передней камеры：<g id="part1">%1$s</g>!</string>
+    <string name="tip_back_msg">Качество видео задней камеры：<g id="part1">%1$s</g>!</string>
+    <string name="storage_title">Путь хранения</string>
+    <string name="storage_dialog_title">Путь хранения видео</string>
     <string name="storage_local">Внутренняя память</string>
     <string name="storage_sdcard">SD карта</string>
-    <string name="tip_storage_path_msg">Текущий путь хранения видео:<g id="part1">%1$s</g>！</string>
-    <string name="storage_not_exist_msg">Место хранения：<g id="part1">%1$s</g> не существует！</string>
-    <string name="autosave_time_title">Длительность видеофайлов (Вступит в силу после перезагрузки)</string>
+    <string name="tip_storage_path_msg">Текущий путь хранения видео:<g id="part1">%1$s</g>!</string>
+    <string name="storage_not_exist_msg">Место хранения：<g id="part1">%1$s</g> не существует!</string>
+    <string name="autosave_time_title">Длительность видеофайлов (перезагрузка)</string>
     <string name="autosave_time_dialog_title">Длительность видеофайлов</string>
-    <string name="minute_01">1 мин</string>
-    <string name="minute_02">2 мин</string>
-    <string name="minute_03">3 мин</string>
-    <string name="minute_05">5 мин</string>
+    <string name="minute_01">1 минуты</string>
+    <string name="minute_02">2 минуты</string>
+    <string name="minute_03">3 минуты</string>
+    <string name="minute_05">5 минуты</string>
     <string name="tip_recording_time_msg">Интервал хранения видеозаписи<g id="part1">%1$s</g></string>
     <string name="autosleep_time_title">Спящий режим</string>
     <string name="autosleep_time_dialog_title">Спящий режим</string>
@@ -76,22 +74,22 @@
     <string name="stoppreview_never">Отключить автоматический выход из предпросмотра</string>
     <string name="mute_record">Без звука</string>
     <string name="auto_start_record">Автоматический запуск записи</string>
-    <string name="show_float_button">Показать плавающие кнопки</string>
+    <string name="show_float_button">Показать плавающую кнопку</string>
     <string name="flash_light">Отключить подсветку</string>
     <string name="gsensor">Выйти из спящего режима при столкновении</string>
     <string name="summary_restart_recording">Изменения всупят в силу после перезагрузки</string>
-    <string name="bak_cam_ver_mir">Зеркальное отображение задней камеры (эффект вступает в силу после перезагрузки системы)</string>
-    <string name="front_preview_scale_type_title">Масштаб просмотра фронтальной камеры</string>
-    <string name="back_preview_scale_type_title">Масштаб просмотра тыловой камеры</string>
+    <string name="bak_cam_ver_mir">Зеркальное отображение задней камеры (перезагрузка)</string>
+    <string name="front_preview_scale_type_title">Масштаб просмотра передней камеры</string>
+    <string name="back_preview_scale_type_title">Масштаб просмотра задней камеры</string>
     <string name="scale_type_best_fit">По размеру</string>
     <string name="scale_type_center">По центру</string>
-    <string name="front_scale_type_dialog_title">Масштаб просмотра фронтальной камеры</string>
-    <string name="back_scale_type_dialog_title">Масштаб просмотра тыловой камеры</string>
+    <string name="front_scale_type_dialog_title">Масштаб просмотра передней камеры</string>
+    <string name="back_scale_type_dialog_title">Масштаб просмотра задней камеры</string>
     <string name="recording_time"><g id="part1">%1$s</g> <g id="part2">%2$s</g></string>
     <string name="dual_recording">Две камеры</string>
-    <string name="front_recording">фронтальная</string>
-    <string name="back_recording">задняя</string>
-    <string name="dual_recording_night">ночная</string>
+    <string name="front_recording">Передняя</string>
+    <string name="back_recording">Задняя</string>
+    <string name="dual_recording_night">Ночная</string>
     <string name="history_record">История</string>
     <string name="upfolder">Вверх</string>
     <string name="display_mode_grid">Сетка</string>
@@ -107,37 +105,36 @@
     <string name="multiselected_num">выбрано (<g id="percent">%1$s</g>)</string>
     <string name="open_fail">Ошибка открытия файла</string>
     <string name="confirm">Подтвердить</string>
-    <string name="delete_dialog_msg">Удаление ...</string>
-    <string name="delete_confirm">Вы уверены, что хотите удалить \"%s\"？</string>
+    <string name="delete_dialog_msg">Удаление...</string>
+    <string name="delete_confirm">Вы уверены, что хотите удалить \"%s\"?</string>
     <string name="delete_failed">Ошибка удаления</string>
     <string name="delete_success">Успешно удален</string>
     <string name="delete_all_confirm">Вы уверены, что хотите удалить все выбранные файлы?</string>
     <string name="select_none_file">Нет выбранных файлов</string>
-    <string name="fail_to_delete_protected_file">Не удалось удалить файл, файл защищен!！</string>
-    <string name="adapter_off">Нет подключения к источнику питания，устройство перейдет в спящий режим через %1$d секунд</string>
-    <string name="car_stopped_off">За последние%1$d мин не зафиксировано движения автомобиля，устройство перейдет в спящий режим через%2$d сек для экономии энергии</string>
-    <string name="tip_time_h">Часы</string>
-    <string name="tip_time_m">Минуты</string>
+    <string name="fail_to_delete_protected_file">Не удалось удалить файл, файл защищен!</string>
+    <string name="adapter_off">Нет подключения к источнику питания, устройство перейдет в спящий режим через %1$d секунд</string>
+    <string name="car_stopped_off">За последние %1$d мин не зафиксировано движения автомобиля, устройство перейдет в спящий режим через %2$d секунд для экономии энергии</string>
+    <string name="tip_time_h">:</string>
     <string name="tip_float_button">Нажмите на кнопку для приостановки предварительного просмотра</string>
     <string name="tip_float_view">Нажмите на плавающее окно чтобы переключиться на камеру. Двойное нажатие откроет меню регистратора</string>
-    <string name="tip_start_record">Начать запись</string>
-    <string name="tip_stop_record">Остановить запись</string>
-    <string name="tip_camera_front">Переключить в режим фронтальной камеры</string>
+    <string name="tip_start_record">Запись начата</string>
+    <string name="tip_stop_record">Запись остановлена</string>
+    <string name="tip_camera_front">Переключить в режим передней камеры</string>
     <string name="tip_camera_night">Переключение в ночной режим</string>
     <string name="tip_camera_double">Переключить в режим двух камер</string>
     <string name="tip_camera_switch">Переключение камеры</string>
     <string name="tip_camera_back">Переключить в режим задней камеры</string>
     <string name="tip_defult_map">Для навигации по умолчанию установлено значение %s, длительно нажмите на GPS для сброса</string>
     <string name="tip_video_record">Видеорегистратор</string>
-    <string name="tip_insert_sdcard">Вставьте SD-карту</string>
+    <string name="tip_insert_sdcard">Вставьте карту памяти</string>
     <string name="tip_collision">Блокировка видео столкновения</string>
     <string name="tip_lock">Защищенное видео</string>
     <string name="tip_sdcard_full">Недостаточно места на карте памяти</string>
     <string name="tip_sdcard_format">Недостаточно места на карте памяти, отформатируйте ее</string>
-    <string name="tip_sdcard_slow">Низкая скорость карты памяти，замените ее</string>
-    <string name="tip_record_stopped">Низкая скорость карты памяти，запись остановлена</string>
-    <string name="tip_stop_preview">Выход из предпросмотра для экономии энергии</string>
-    <string name="tip_background_recording">Продолжается запись в фоновом режиме</string>
+    <string name="tip_sdcard_slow">Низкая скорость карты памяти, замените ее</string>
+    <string name="tip_record_stopped">Низкая скорость карты памяти, запись остановлена</string>
+    <string name="tip_stop_preview">Выход из предпросмотра</string>
+    <string name="tip_background_recording">Запись продолжается</string>
     <string name="accessibility_switch_to_camera">Переключиться на фото</string>
     <string name="accessibility_switch_to_video">Переключиться на видео</string>
     <string name="time_am">АМ</string>
@@ -147,7 +144,7 @@
     <string name="end_date_prefix">Дата окончания：</string>
     <string name="date_select_error">Ошибка выбора даты!</string>
     <string name="d_camera">Две камеры</string>
-    <string name="f_camera">Фронтальная камера</string>
+    <string name="f_camera">Передняя камера</string>
     <string name="b_camera">Задняя камера</string>
     <string name="range_all">Все</string>
     <string name="range_today">Сегодня</string>
@@ -157,7 +154,7 @@
     <string name="home_dvr">Видеорегистратор</string>
     <string name="home_bt">Bluetooth</string>
     <string name="home_apps">Приложения</string>
-    <string name="home_fm">FM-станция</string>
+    <string name="home_fm">FM</string>
     <string name="music_widget_initial_text">Коснитесь для выбора музыки</string>
     <string name="sleep_dialog_title">Спящий режим</string>
     <string name="sleep_dialog_text">Система уйдет в спящий режим</string>
@@ -168,6 +165,30 @@
     <string name="setting">Настройки</string>
     <string name="gps_watermark">Отображение штампа GPS</string>
     <string name="double_tap_fullscreen">Двойным нажатием войдите в полноэкранный режим просмотра</string>
+    <string name="seconds_30">30 секунд</string>
+    <string name="front_cam_ver_mir">Зеркальное отображение передней камеры (перезагрузка)</string>
+    <string name="left_cam_ver_mir">Зеркальное отображение левой камеры (перезагрузка)</string>
+    <string name="right_cam_ver_mir">Зеркальное отображение правой камеры (перезагрузка)</string>
+    <string name="recording3">Три</string>
+    <string name="recording4">Четыре</string>
+    <string name="tip_sdcard_read_only">Ошибка записи на карту памяти, замените ее</string>
+    <string name="tip_car_backing">Режим заднего хода</string>
+    <string name="tip_turn_left">Левый поворот</string>
+    <string name="tip_turn_right">Правый поворот</string>
+    <string name="tip_please_record">Запустите запись</string>
+    <string name="l_camera">Левая камера</string>
+    <string name="r_camera">Правая камера</string>
+    <string name="adas_calibration">Перекалибровка ADAS</string>
+    <string name="adas_report">Предупреждение о прямом столкновении</string>
+    <string name="adas_report2">Предупреждение о выезде с полосы движения</string>
+    <string name="adas_report3">Предупреждение о движении впереди</string>
+    <string name="adas_forward_collision">Внимание ! Опасность !</string>
+    <string name="adas_lane_departure">Внимание на разметку !</string>
+    <string name="adas_forward_vehicle_moving">Перед вами началось движение !</string>
+    <string name="camera_left">Левая</string>
+    <string name="camera_right">Правая</string>
+    <string name="camera_night">Ночная</string>
+    <string name="camera_triple">Три</string>
 <!-- by boba 10.08.2020
 select acc on cam -->
     <string name="acc_on_cam_title">Показывать камеру при включении</string>
