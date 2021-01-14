@@ -163,7 +163,7 @@
     <string name="storage_format">Форматирование SD-карты</string>
     <string name="storage_manage">Управление хранением данных</string>
     <string name="setting">Настройки</string>
-    <string name="gps_watermark">Отображение штампа GPS</string>
+    <string name="gps_watermark">Отображение метки GPS</string>
     <string name="double_tap_fullscreen">Двойным нажатием войдите в полноэкранный режим просмотра</string>
     <string name="seconds_30">30 секунд</string>
     <string name="front_cam_ver_mir">Зеркальное отображение передней камеры (перезагрузка)</string>
