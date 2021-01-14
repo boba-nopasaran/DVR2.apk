@@ -4130,7 +4130,7 @@
     invoke-static {v0, v11}, Lcom/car/dvr/DvrApplication;->speechTips(Landroid/content/Context;Ljava/lang/String;)V
 
 #by boba 11.08.2020
-#screensave after stoppreview
+#screensaver after stop preview
 new-instance v6, Landroid/content/Intent;
 const-string v8, "com.car.hud.dismiss"
 invoke-direct {v6, v8}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
