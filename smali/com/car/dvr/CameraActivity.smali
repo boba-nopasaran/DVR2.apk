@@ -4129,6 +4129,14 @@
 
     invoke-static {v0, v11}, Lcom/car/dvr/DvrApplication;->speechTips(Landroid/content/Context;Ljava/lang/String;)V
 
+#by boba 11.08.2020
+#screensave after stoppreview
+new-instance v6, Landroid/content/Intent;
+const-string v8, "com.car.hud.dismiss"
+invoke-direct {v6, v8}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+move-object/from16 v8, p0
+invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/content/Intent;)V	
+
     .line 2052
     invoke-virtual/range {p0 .. p0}, Lcom/car/dvr/CameraActivity;->finish()V
 
