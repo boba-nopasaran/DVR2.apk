@@ -693,21 +693,23 @@
     .line 165
     if-ne v5, v8, :cond_4
 
-    .line 166
-    iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mHandler:Landroid/os/Handler;
-
-    invoke-virtual {v6, v9}, Landroid/os/Handler;->hasMessages(I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_3
-
-    .line 167
-    iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mHandler:Landroid/os/Handler;
-
-    invoke-virtual {v6, v9}, Landroid/os/Handler;->removeMessages(I)V
-
-    goto :goto_1
+#by boba 07.01.2020
+#delay for P->D->P
+#    .line 166
+#    iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mHandler:Landroid/os/Handler;
+#
+#    invoke-virtual {v6, v9}, Landroid/os/Handler;->hasMessages(I)Z
+#
+#    move-result v6
+#
+#    if-eqz v6, :cond_3
+#
+#    .line 167
+#    iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mHandler:Landroid/os/Handler;
+#
+#    invoke-virtual {v6, v9}, Landroid/os/Handler;->removeMessages(I)V
+#
+#    goto :goto_1
 
     .line 170
     :cond_3
@@ -726,6 +728,10 @@
 
     invoke-virtual {v6, v8}, Landroid/os/Handler;->removeMessages(I)V
 
+#by boba 07.01.2020
+#delay for P->D->P
+invoke-virtual {v6, v9}, Landroid/os/Handler;->removeMessages(I)V
+
     .line 173
     iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mHandler:Landroid/os/Handler;
 
@@ -742,14 +748,16 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 175
-    iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mCarServiceImpl:Lcom/car/common/CarServiceImpl;
-
-    invoke-virtual {v6, v8, v8, v12}, Lcom/car/common/CarServiceImpl;->requestScreen(ZZLjava/lang/String;)Z
-
-    move-result v6
-
-    iput-boolean v6, p0, Lcom/car/dvr/CameraReceiver;->mNeedRecover:Z
+#by boba 07.01.2020
+#delay for P->D->P
+#    .line 175
+#    iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mCarServiceImpl:Lcom/car/common/CarServiceImpl;
+#
+#    invoke-virtual {v6, v8, v8, v12}, Lcom/car/common/CarServiceImpl;->requestScreen(ZZLjava/lang/String;)Z
+#
+#    move-result v6
+#
+#    iput-boolean v6, p0, Lcom/car/dvr/CameraReceiver;->mNeedRecover:Z
 
     goto/16 :goto_1
 
@@ -757,6 +765,10 @@
     .end local v3    # "msg":Landroid/os/Message;
     :cond_4
     iget-object v6, p0, Lcom/car/dvr/CameraReceiver;->mHandler:Landroid/os/Handler;
+
+#by boba 07.01.2020
+#delay for P->D->P
+invoke-virtual {v6, v8}, Landroid/os/Handler;->removeMessages(I)V
 
     invoke-virtual {v6, v9}, Landroid/os/Handler;->removeMessages(I)V
 
