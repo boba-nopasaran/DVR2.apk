@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/storage_entries" android:title="@string/storage_title" android:key="storage_path" android:defaultValue="local" android:dialogTitle="@string/storage_dialog_title" android:entryValues="@array/storage_values" />
+    <ListPreference android:entries="@array/autosave_time_entries" android:title="@string/autosave_time_title" android:key="autosave_time" android:defaultValue="120" android:dialogTitle="@string/autosave_time_dialog_title" android:entryValues="@array/autosave_time_values" />
+    <ListPreference android:entries="@array/autosleep_time_entries" android:title="@string/autosleep_time_title" android:key="autosleep_time" android:defaultValue="30" android:dialogTitle="@string/autosleep_time_dialog_title" android:entryValues="@array/autosleep_time_values" />
+    <ListPreference android:entries="@array/stoppreview_time_entries" android:title="@string/stoppreview_time_title" android:key="stoppreview_time" android:defaultValue="30" android:dialogTitle="@string/stoppreview_time_dialog_title" android:entryValues="@array/stoppreview_time_values" />
+    <ListPreference android:entries="@array/quality_entries" android:title="@string/front_quality_title" android:key="front_quality" android:defaultValue="high" android:dialogTitle="@string/quality_dialog_title" android:entryValues="@array/quality_values" />
+    <ListPreference android:entries="@array/quality_entries" android:title="@string/back_quality_title" android:key="back_quality" android:defaultValue="normal" android:dialogTitle="@string/quality_dialog_title" android:entryValues="@array/quality_values" />
+    <ListPreference android:entries="@array/scale_type_entries" android:title="@string/front_preview_scale_type_title" android:key="front_scale_type" android:defaultValue="0" android:dialogTitle="@string/front_scale_type_dialog_title" android:entryValues="@array/scale_type_values" />
+    <ListPreference android:entries="@array/scale_type_entries" android:title="@string/back_preview_scale_type_title" android:key="back_scale_type" android:defaultValue="0" android:dialogTitle="@string/back_scale_type_dialog_title" android:entryValues="@array/scale_type_values" />
+    <CheckBoxPreference android:title="@string/front_cam_ver_mir" android:key="front_cam_ver_mir" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/bak_cam_ver_mir" android:key="bak_cam_ver_mir" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/left_cam_ver_mir" android:key="left_cam_ver_mir" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/right_cam_ver_mir" android:key="right_cam_ver_mir" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/mute_record" android:key="mute_record" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/auto_start_record" android:key="auto_start_record" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/show_float_button" android:key="show_float_button" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/flash_light" android:key="flash_light" android:summary="@string/summary_restart_recording" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/gps_watermark" android:key="gps_watermark" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/vr_back" android:key="vr_back" android:defaultValue="true" />
+    <Preference android:persistent="false" android:title="@string/biaoding" android:key="biaoding" />
+    <Preference android:persistent="false" android:title="@string/version_title" android:key="version" style="?android:preferenceInformationStyle" />
+</PreferenceScreen>
