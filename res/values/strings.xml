@@ -237,4 +237,7 @@
 select acc on cam -->
     <string name="acc_on_cam_title">Show cam ACC on</string>
     <string name="acc_on_cam_dialog_title">Select cam ACC on</string>
+<!-- by boba 12.08.2020
+text watermark -->
+    <string name="text_watermark">Display text Watermark</string>
 </resources>

@@ -67,6 +67,12 @@
 .field private static final PROP_ACC_ON_CAM:Ljava/lang/String; = "persist.acc.on.cam.fullscreen"
 .field private mAccOnCamPreference:Landroid/preference/ListPreference;
 
+#by boba 12.08.2020
+#text watermark
+.field private static final KEY_TEXT_WATERMARK:Ljava/lang/String; = "text_watermark"
+.field private static final PROP_TEXT_WATERMARK:Ljava/lang/String; = "persist.dvr.watermar"
+.field private mTextWatermark:Landroid/preference/EditTextPreference;
+
 # instance fields
 .field private mAutoSaveTimePrefence:Landroid/preference/ListPreference;
 
@@ -539,6 +545,15 @@ invoke-virtual {v0, v1}, Lcom/car/dvr/GenericFragment;->findPreference(Ljava/lan
 move-result-object v1
 check-cast v1, Landroid/preference/ListPreference;
 iput-object v1, v0, Lcom/car/dvr/GenericFragment;->mAccOnCamPreference:Landroid/preference/ListPreference;
+
+#by boba 12.08.2020
+#text watermark
+move-object/from16 v0, p0
+const-string v1, "text_watermark"
+invoke-virtual {v0, v1}, Lcom/car/dvr/GenericFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+move-result-object v1
+check-cast v1, Landroid/preference/EditTextPreference;
+iput-object v1, v0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
 
     .line 119
     const-string v17, "storage_path"
@@ -1760,6 +1775,16 @@ invoke-virtual {v5}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/C
 move-result-object v4
 invoke-virtual {v5, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
+#by boba 12.08.2020
+#text watermark
+const-string v5, "persist.dvr.watermar"
+const-string v4, ""
+invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+move-result-object v4
+iget-object v5, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
+invoke-virtual {v5, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+invoke-virtual {v5, v4}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
+
     .line 344
     iget-object v5, p0, Lcom/car/dvr/GenericFragment;->mAutoSaveTimePrefence:Landroid/preference/ListPreference;
 
@@ -2688,7 +2713,7 @@ invoke-virtual {v5, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/l
 #by boba 10.08.2020
 #select acc on cam
 #    if-eqz v0, :cond_0
-if-eqz v0, :cond_100
+if-eqz v0, :cond_101
 
     .line 319
     const-string v1, "persist.right_cam.ver_mir"
@@ -2728,6 +2753,21 @@ const-string v0, "persist.acc.on.cam.fullscreen"
 invoke-virtual {v1}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 move-result-object v1
 invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+goto/16 :goto_0
+
+#by boba 12.08.2020
+#text watermark
+:cond_101
+const-string v0, "text_watermark"
+invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+move-result v0
+if-eqz v0, :cond_100
+iget-object v1, p0, Lcom/car/dvr/GenericFragment;->mTextWatermark:Landroid/preference/EditTextPreference;
+const-string v0, "persist.dvr.watermar"
+invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+move-result-object v2
+invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
+invoke-static {v0, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 goto/16 :goto_0
 
 .end method
