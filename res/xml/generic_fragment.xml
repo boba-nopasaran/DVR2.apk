@@ -20,5 +20,10 @@
     <CheckBoxPreference android:title="@string/gps_watermark" android:key="gps_watermark" android:defaultValue="false" />
     <CheckBoxPreference android:title="@string/vr_back" android:key="vr_back" android:defaultValue="true" />
     <Preference android:persistent="false" android:title="@string/biaoding" android:key="biaoding" />
+
+<!-- by boba 10.08.2020
+select acc on cam -->
+    <ListPreference android:entries="@array/acc_on_cam_entries" android:title="@string/acc_on_cam_title" android:key="acc_on_cam" android:defaultValue="" android:dialogTitle="@string/acc_on_cam_dialog_title" android:entryValues="@array/acc_on_cam_values" />
+
     <Preference android:persistent="false" android:title="@string/version_title" android:key="version" style="?android:preferenceInformationStyle" />
 </PreferenceScreen>

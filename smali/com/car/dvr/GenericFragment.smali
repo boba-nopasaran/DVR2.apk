@@ -61,6 +61,11 @@
 
 .field private static mPreviewBestfitEnable:Z
 
+#by boba 10.08.2020
+#select acc on cam
+.field private static final KEY_ACC_ON_CAM:Ljava/lang/String; = "acc_on_cam"
+.field private static final PROP_ACC_ON_CAM:Ljava/lang/String; = "persist.acc.on.cam.fullscreen"
+.field private mAccOnCamPreference:Landroid/preference/ListPreference;
 
 # instance fields
 .field private mAutoSaveTimePrefence:Landroid/preference/ListPreference;
@@ -525,6 +530,15 @@
     move/from16 v1, v17
 
     invoke-virtual {v0, v1}, Lcom/car/dvr/GenericFragment;->addPreferencesFromResource(I)V
+
+#by boba 10.08.2020
+#select acc on cam
+move-object/from16 v0, p0
+const-string v1, "acc_on_cam"
+invoke-virtual {v0, v1}, Lcom/car/dvr/GenericFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+move-result-object v1
+check-cast v1, Landroid/preference/ListPreference;
+iput-object v1, v0, Lcom/car/dvr/GenericFragment;->mAccOnCamPreference:Landroid/preference/ListPreference;
 
     .line 119
     const-string v17, "storage_path"
@@ -1734,6 +1748,18 @@
     .line 342
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
+#by boba 10.08.2020
+#select acc on cam
+const-string v5, "persist.acc.on.cam.fullscreen"
+const-string v4, ""
+invoke-static {v5, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+move-result-object v4
+iget-object v5, p0, Lcom/car/dvr/GenericFragment;->mAccOnCamPreference:Landroid/preference/ListPreference;
+invoke-virtual {v5, v4}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+invoke-virtual {v5}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
+move-result-object v4
+invoke-virtual {v5, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+
     .line 344
     iget-object v5, p0, Lcom/car/dvr/GenericFragment;->mAutoSaveTimePrefence:Landroid/preference/ListPreference;
 
@@ -2659,7 +2685,10 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+#by boba 10.08.2020
+#select acc on cam
+#    if-eqz v0, :cond_0
+if-eqz v0, :cond_100
 
     .line 319
     const-string v1, "persist.right_cam.ver_mir"
@@ -2683,6 +2712,24 @@
     const-string v0, "0"
 
     goto :goto_4
+
+#by boba 10.08.2020
+#select acc on cam
+:cond_100
+const-string v0, "acc_on_cam"
+invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+move-result v0
+if-eqz v0, :cond_0
+iget-object v1, p0, Lcom/car/dvr/GenericFragment;->mAccOnCamPreference:Landroid/preference/ListPreference;
+invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
+move-result-object v0
+invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+const-string v0, "persist.acc.on.cam.fullscreen"
+invoke-virtual {v1}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+move-result-object v1
+invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
+goto/16 :goto_0
+
 .end method
 
 .method public setBaseActivity(Lcom/car/dvr/BaseActivity;)V

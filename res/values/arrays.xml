@@ -127,4 +127,18 @@
         <item>0</item>
         <item>1</item>
     </string-array>
+<!-- by boba 10.08.2020
+select acc on cam -->
+    <string-array name="acc_on_cam_entries">
+        <item>-</item>
+        <item>@string/camera_front</item>
+        <item>@string/camera_back</item>
+        <item>@string/camera_double</item>
+    </string-array>
+    <string-array name="acc_on_cam_values">
+        <item></item>
+        <item>front</item>
+        <item>rear</item>
+		<item>all</item>
+    </string-array>
 </resources>

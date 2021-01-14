@@ -168,4 +168,8 @@
     <string name="setting">Настройки</string>
     <string name="gps_watermark">Отображение штампа GPS</string>
     <string name="double_tap_fullscreen">Двойным нажатием войдите в полноэкранный режим просмотра</string>
+<!-- by boba 10.08.2020
+select acc on cam -->
+    <string name="acc_on_cam_title">Показывать камеру при включении</string>
+    <string name="acc_on_cam_dialog_title">Выбор камеры при включении</string>
 </resources>
