@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DVR</string>
+    <string name="app_name">Регистратор</string>
     <string name="camera_name">Запись</string>
     <string name="catalog_hot">Горячее</string>
     <string name="no_content_text">Нет содержания</string>
@@ -21,7 +21,7 @@
     <string name="back_camera_not_exist">Задняя камера не подключена</string>
     <string name="front_camera_remove">Отключение передней камеры</string>
     <string name="back_camera_remove">Отключение задней камеры</string>
-    <string name="recoding_stop_by_storage_umount">Остановка записи, потому что <g id="part1">%1$s</g>тключена!</string>
+    <string name="recoding_stop_by_storage_umount">Остановка записи, потому что <g id="part1">%1$s</g> отключена!</string>
     <string name="storage_mounted">\"<g id="part1">%1$s</g>\" подключите!</string>
     <string name="storage_umounted">\"<g id="part1">%1$s</g>\" отключите!</string>
     <string name="photo_module">Режим Фото</string>
@@ -42,21 +42,21 @@
     <string name="sensitive_high">Высокая</string>
     <string name="sensitive_normal">Нормальная</string>
     <string name="sensitive_low">Низкая</string>
-    <string name="tip_front_msg">Качество видео передней камеры：<g id="part1">%1$s</g>!</string>
-    <string name="tip_back_msg">Качество видео задней камеры：<g id="part1">%1$s</g>!</string>
+    <string name="tip_front_msg">Качество видео передней камеры:<g id="part1">%1$s</g>!</string>
+    <string name="tip_back_msg">Качество видео задней камеры:<g id="part1">%1$s</g>!</string>
     <string name="storage_title">Путь хранения</string>
     <string name="storage_dialog_title">Путь хранения видео</string>
     <string name="storage_local">Внутренняя память</string>
-    <string name="storage_sdcard">SD карта</string>
+    <string name="storage_sdcard">SD-карта</string>
     <string name="tip_storage_path_msg">Текущий путь хранения видео:<g id="part1">%1$s</g>!</string>
-    <string name="storage_not_exist_msg">Место хранения：<g id="part1">%1$s</g> не существует!</string>
+    <string name="storage_not_exist_msg">Место хранения:<g id="part1">%1$s</g> не существует!</string>
     <string name="autosave_time_title">Длительность видеофайлов (перезагрузка)</string>
     <string name="autosave_time_dialog_title">Длительность видеофайлов</string>
     <string name="minute_01">1 минуты</string>
     <string name="minute_02">2 минуты</string>
     <string name="minute_03">3 минуты</string>
     <string name="minute_05">5 минуты</string>
-    <string name="tip_recording_time_msg">Интервал хранения видеозаписи<g id="part1">%1$s</g></string>
+    <string name="tip_recording_time_msg">Интервал хранения видеозаписи<g id="part1">%1$s</g>.</string>
     <string name="autosleep_time_title">Спящий режим</string>
     <string name="autosleep_time_dialog_title">Спящий режим</string>
     <string name="autosleep_10">через 10 минут</string>
@@ -108,7 +108,7 @@
     <string name="delete_dialog_msg">Удаление...</string>
     <string name="delete_confirm">Вы уверены, что хотите удалить \"%s\"?</string>
     <string name="delete_failed">Ошибка удаления</string>
-    <string name="delete_success">Успешно удален</string>
+    <string name="delete_success">Успешно удалено</string>
     <string name="delete_all_confirm">Вы уверены, что хотите удалить все выбранные файлы?</string>
     <string name="select_none_file">Нет выбранных файлов</string>
     <string name="fail_to_delete_protected_file">Не удалось удалить файл, файл защищен!</string>
@@ -140,8 +140,8 @@
     <string name="time_am">АМ</string>
     <string name="time_pm">РМ</string>
     <string name="date_select_title">Выбор даты</string>
-    <string name="start_date_prefix">Дата начала：</string>
-    <string name="end_date_prefix">Дата окончания：</string>
+    <string name="start_date_prefix">Дата начала:</string>
+    <string name="end_date_prefix">Дата окончания:</string>
     <string name="date_select_error">Ошибка выбора даты!</string>
     <string name="d_camera">Две камеры</string>
     <string name="f_camera">Передняя камера</string>
@@ -154,7 +154,7 @@
     <string name="home_dvr">Видеорегистратор</string>
     <string name="home_bt">Bluetooth</string>
     <string name="home_apps">Приложения</string>
-    <string name="home_fm">FM</string>
+    <string name="home_fm">FM-станция</string>
     <string name="music_widget_initial_text">Коснитесь для выбора музыки</string>
     <string name="sleep_dialog_title">Спящий режим</string>
     <string name="sleep_dialog_text">Система уйдет в спящий режим</string>
@@ -171,7 +171,7 @@
     <string name="right_cam_ver_mir">Зеркальное отображение правой камеры (перезагрузка)</string>
     <string name="recording3">Три</string>
     <string name="recording4">Четыре</string>
-    <string name="tip_sdcard_read_only">Ошибка записи на карту памяти, замените ее</string>
+    <string name="tip_sdcard_read_only">Ошибка записи на карту памяти, замените ее.</string>
     <string name="tip_car_backing">Режим заднего хода</string>
     <string name="tip_turn_left">Левый поворот</string>
     <string name="tip_turn_right">Правый поворот</string>
@@ -196,4 +196,9 @@ select acc on cam -->
 <!-- by boba 12.08.2020
 text watermark -->
     <string name="text_watermark">Текстовая метка в видеофайле</string>
+    <string name="camera_tip_open_mic">Мик вкл</string>
+    <string name="camera_tip_close_mic">Мик выкл</string>
+    <string name="camera_tip_close_gsensor">Датчик удара выкл</string>
+    <string name="camera_tip_open_gsensor">Датчик удара вкл</string>
+    <string name="check">Калибровка</string>
 </resources>
