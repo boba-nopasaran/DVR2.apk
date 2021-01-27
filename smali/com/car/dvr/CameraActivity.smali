@@ -2879,9 +2879,11 @@
     .line 2907
     :cond_5
     :goto_0
-    sget-boolean v0, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
-
-    if-eqz v0, :cond_6
+#by boba 23.01.2021
+#show rear cam if recording is disabled
+#    sget-boolean v0, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
+#
+#    if-eqz v0, :cond_6
 
     sget-boolean v0, Lcom/car/dvr/VideoInfo;->NO_FRONT_CAMERA:Z
 
@@ -6941,28 +6943,30 @@ invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/co
 
     const/4 v5, 0x0
 
-    .line 1504
-    sget-boolean v2, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
-
-    if-nez v2, :cond_0
-
-    sget-boolean v2, Lcom/car/dvr/CameraActivity;->mIsCarBacking:Z
-
-    if-nez v2, :cond_0
-
-    sget v2, Lcom/car/dvr/CameraService;->CAMERA_FRONT:I
-
-    if-eq p1, v2, :cond_0
-
-    .line 1506
-    const-string v2, "DVR.CameraActivity"
-
-    const-string v3, "back camera is disabled, force setMode(CAMERA_FRONT)"
-
-    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1507
-    sget p1, Lcom/car/dvr/CameraService;->CAMERA_FRONT:I
+#by boba 23.01.2021
+#show rear cam if recording is disabled
+#    .line 1504
+#    sget-boolean v2, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
+#
+#    if-nez v2, :cond_0
+#
+#    sget-boolean v2, Lcom/car/dvr/CameraActivity;->mIsCarBacking:Z
+#
+#    if-nez v2, :cond_0
+#
+#    sget v2, Lcom/car/dvr/CameraService;->CAMERA_FRONT:I
+#
+#    if-eq p1, v2, :cond_0
+#
+#    .line 1506
+#    const-string v2, "DVR.CameraActivity"
+#
+#    const-string v3, "back camera is disabled, force setMode(CAMERA_FRONT)"
+#
+#    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+#
+#    .line 1507
+#    sget p1, Lcom/car/dvr/CameraService;->CAMERA_FRONT:I
 
     .line 1510
     :cond_0
@@ -9807,9 +9811,11 @@ invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/co
 
     if-eqz v6, :cond_6
 
-    sget-boolean v6, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
-
-    if-eqz v6, :cond_6
+#by boba 23.01.2021
+#show rear cam if recording is disabled
+#    sget-boolean v6, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
+#
+#    if-eqz v6, :cond_6
 
     .line 276
     sput-boolean v7, Lcom/car/dvr/CameraActivity;->sScreenSplit:Z
@@ -9831,9 +9837,11 @@ invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/co
 
     if-ltz v6, :cond_7
 
-    sget-boolean v6, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
-
-    if-eqz v6, :cond_7
+#by boba 23.01.2021
+#show rear cam if recording is disabled
+#    sget-boolean v6, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
+#
+#    if-eqz v6, :cond_7
 
     .line 281
     sput-boolean v7, Lcom/car/dvr/CameraActivity;->sScreenSplit:Z
@@ -9939,10 +9947,12 @@ invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/co
 
     iput-object v6, p0, Lcom/car/dvr/CameraActivity;->mCamSelector:Landroid/view/View;
 
-    .line 300
-    sget-boolean v6, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
-
-    if-eqz v6, :cond_8
+#by boba 23.01.2021
+#show rear cam if recording is disabled
+#    .line 300
+#    sget-boolean v6, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
+#
+#    if-eqz v6, :cond_8
 
     sget-boolean v6, Lcom/car/dvr/VideoInfo;->NO_FRONT_CAMERA:Z
 
@@ -12138,15 +12148,17 @@ invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/co
     .line 921
     invoke-direct {p0}, Lcom/car/dvr/CameraActivity;->resetAutoStopPreviewTimer()V
 
-    .line 923
-    sget-boolean v0, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
-
-    if-nez v0, :cond_2
-
-    .line 924
-    const/4 v0, 0x4
-
-    invoke-direct {p0, v0}, Lcom/car/dvr/CameraActivity;->setSecondSurfaceVisibility(I)V
+#by boba 23.01.2021
+#show rear cam if recording is disabled
+#    .line 923
+#    sget-boolean v0, Lcom/car/dvr/VideoInfo;->IS_BACK_CAM_RECORD:Z
+#
+#    if-nez v0, :cond_2
+#
+#    .line 924
+#    const/4 v0, 0x4
+#
+#    invoke-direct {p0, v0}, Lcom/car/dvr/CameraActivity;->setSecondSurfaceVisibility(I)V
 
     .line 927
     :cond_2
