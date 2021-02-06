@@ -31,8 +31,8 @@
     <string name="close">Закрыть</string>
     <string name="error">Ошибка</string>
     <string name="warning">Предупреждение</string>
-    <string name="front_quality_title">Качество видео передней камеры (перезагрузка)</string>
-    <string name="back_quality_title">Качество видео задней камеры (перезагрузка)</string>
+    <string name="front_quality_title">Качество видео передней камеры (требуется перезагрузка)</string>
+    <string name="back_quality_title">Качество видео задней камеры (требуется перезагрузка)</string>
     <string name="quality_dialog_title">Качество видео</string>
     <string name="quality_high">Высокое（1080P）</string>
     <string name="quality_normal">Среднее（720P）</string>
@@ -50,7 +50,7 @@
     <string name="storage_sdcard">SD-карта</string>
     <string name="tip_storage_path_msg">Текущий путь хранения видео:<g id="part1">%1$s</g>!</string>
     <string name="storage_not_exist_msg">Место хранения:<g id="part1">%1$s</g> не существует!</string>
-    <string name="autosave_time_title">Длительность видеофайлов (перезагрузка)</string>
+    <string name="autosave_time_title">Длительность видеофайлов (требуется перезагрузка)</string>
     <string name="autosave_time_dialog_title">Длительность видеофайлов</string>
     <string name="minute_01">1 минуты</string>
     <string name="minute_02">2 минуты</string>
@@ -78,7 +78,7 @@
     <string name="flash_light">Отключить подсветку</string>
     <string name="gsensor">Выйти из спящего режима при столкновении</string>
     <string name="summary_restart_recording">Изменения всупят в силу после перезагрузки</string>
-    <string name="bak_cam_ver_mir">Зеркальное отображение задней камеры (перезагрузка)</string>
+    <string name="bak_cam_ver_mir">Зеркальное отображение задней камеры (требуется перезагрузка)</string>
     <string name="front_preview_scale_type_title">Масштаб просмотра передней камеры</string>
     <string name="back_preview_scale_type_title">Масштаб просмотра задней камеры</string>
     <string name="scale_type_best_fit">По размеру</string>
@@ -128,7 +128,7 @@
     <string name="tip_video_record">Видеорегистратор.</string>
     <string name="tip_insert_sdcard">Вставьте карту памяти.</string>
     <string name="tip_collision">Блокировка видео столкновения.</string>
-    <string name="tip_lock">Защищенное видео.</string>
+    <string name="tip_lock">Датчик удара.</string>
     <string name="tip_sdcard_full">Недостаточно места на карте памяти.</string>
     <string name="tip_sdcard_format">Недостаточно места на карте памяти, отформатируйте ее.</string>
     <string name="tip_sdcard_slow">Низкая скорость карты памяти, замените ее.</string>
@@ -166,16 +166,16 @@
     <string name="gps_watermark">Отображение метки GPS</string>
     <string name="double_tap_fullscreen">Двойным нажатием войдите в полноэкранный режим просмотра</string>
     <string name="seconds_30">30 секунд</string>
-    <string name="front_cam_ver_mir">Зеркальное отображение передней камеры (перезагрузка)</string>
-    <string name="left_cam_ver_mir">Зеркальное отображение левой камеры (перезагрузка)</string>
-    <string name="right_cam_ver_mir">Зеркальное отображение правой камеры (перезагрузка)</string>
+    <string name="front_cam_ver_mir">Зеркальное отображение передней камеры (требуется перезагрузка)</string>
+    <string name="left_cam_ver_mir">Зеркальное отображение левой камеры (требуется перезагрузка)</string>
+    <string name="right_cam_ver_mir">Зеркальное отображение правой камеры (требуется перезагрузка)</string>
     <string name="recording3">Три</string>
     <string name="recording4">Четыре</string>
     <string name="tip_sdcard_read_only">Ошибка записи на карту памяти, замените ее.</string>
     <string name="tip_car_backing">Режим заднего хода</string>
-    <string name="tip_turn_left">Левый поворот</string>
-    <string name="tip_turn_right">Правый поворот</string>
-    <string name="tip_please_record">Запустите запись</string>
+    <string name="tip_turn_left">Левый поворот.</string>
+    <string name="tip_turn_right">Правый поворот.</string>
+    <string name="tip_please_record">Запустите запись.</string>
     <string name="l_camera">Левая камера</string>
     <string name="r_camera">Правая камера</string>
     <string name="adas_calibration">Перекалибровка ADAS</string>
@@ -193,6 +193,7 @@
 select acc on cam -->
     <string name="acc_on_cam_title">Показывать камеру при включении</string>
     <string name="acc_on_cam_dialog_title">Выбор камеры при включении</string>
+    <string name="dont_show">Не показывать</string>
 <!-- by boba 12.08.2020
 text watermark -->
     <string name="text_watermark">Текстовая метка в видеофайле</string>

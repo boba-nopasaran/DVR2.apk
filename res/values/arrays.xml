@@ -130,7 +130,7 @@
 <!-- by boba 10.08.2020
 select acc on cam -->
     <string-array name="acc_on_cam_entries">
-        <item>-</item>
+        <item>@string/dont_show</item>
         <item>@string/camera_front</item>
         <item>@string/camera_back</item>
         <item>@string/camera_double</item>
