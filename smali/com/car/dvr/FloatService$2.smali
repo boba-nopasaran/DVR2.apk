@@ -203,6 +203,11 @@
 
     invoke-static {v1, v2}, Lcom/car/dvr/FloatService;->access$900(Lcom/car/dvr/FloatService;I)Z
 
+#by boba 03.03.2021
+#dvr float size
+iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
+invoke-static {v1}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatService;)V
+
     goto :goto_0
 
     .line 121
@@ -298,6 +303,11 @@
     iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
 
     invoke-static {v1}, Lcom/car/dvr/FloatService;->access$700(Lcom/car/dvr/FloatService;)V
+
+#by boba 03.03.2021
+#dvr float size
+iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
+invoke-static {v1}, Lcom/car/dvr/FloatService;->access$hideP(Lcom/car/dvr/FloatService;)V
 
     goto/16 :goto_0
 .end method

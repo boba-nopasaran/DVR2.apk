@@ -77,6 +77,11 @@
 
     invoke-static {v0}, Lcom/car/dvr/FloatService;->access$700(Lcom/car/dvr/FloatService;)V
 
+#by boba 03.03.2021
+#dvr float size
+iget-object v0, p0, Lcom/car/dvr/FloatService$5;->this$0:Lcom/car/dvr/FloatService;
+invoke-static {v0}, Lcom/car/dvr/FloatService;->access$hideP(Lcom/car/dvr/FloatService;)V
+
     .line 301
     return-void
 .end method

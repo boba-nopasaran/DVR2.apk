@@ -527,6 +527,10 @@
 
     invoke-virtual {v0, v1}, Lcom/car/dvr/FloatView;->setVisibility(I)V
 
+#by boba 03.03.2021
+#dvr float size
+invoke-direct {p0}, Lcom/car/dvr/FloatService;->hideP()V
+
     .line 361
     const/4 v0, 0x0
 
@@ -535,6 +539,49 @@
     .line 363
     :cond_0
     return-void
+.end method
+
+#by boba 03.03.2021
+#dvr float size
+.method private showP()V
+.locals 4
+iget-object v0, p0, Lcom/car/dvr/FloatService;->mParentView:Landroid/view/View;
+invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+move-result-object v1
+const-string v2, "persist.dvr.float.width"
+const/16 v3, 0x190
+invoke-static {v2, v3}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+move-result v2
+iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
+const-string v2, "persist.dvr.float.height"
+const/16 v3, 0xf0
+invoke-static {v2, v3}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+move-result v2
+iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+return-void
+.end method
+
+.method private hideP()V
+.locals 3
+iget-object v0, p0, Lcom/car/dvr/FloatService;->mParentView:Landroid/view/View;
+invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+move-result-object v1
+const/16 v2, -2
+iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
+iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+return-void
+.end method
+
+.method static synthetic access$showP(Lcom/car/dvr/FloatService;)V
+.locals 0
+invoke-direct {p0}, Lcom/car/dvr/FloatService;->showP()V
+return-void
+.end method
+
+.method static synthetic access$hideP(Lcom/car/dvr/FloatService;)V
+.locals 0
+invoke-direct {p0}, Lcom/car/dvr/FloatService;->hideP()V
+return-void
 .end method
 
 .method private createView()V

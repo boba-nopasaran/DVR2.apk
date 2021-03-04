@@ -331,6 +331,11 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
+#by boba 03.03.2021
+#dvr float size
+iget-object v2, p0, Lcom/car/dvr/FloatService$4;->this$0:Lcom/car/dvr/FloatService;
+invoke-static {v2}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatService;)V
+
     .line 281
     iget-object v2, p0, Lcom/car/dvr/FloatService$4;->this$0:Lcom/car/dvr/FloatService;
 
