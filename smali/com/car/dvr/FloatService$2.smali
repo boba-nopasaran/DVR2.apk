@@ -160,12 +160,20 @@
 
     iput-boolean v3, v1, Lcom/car/dvr/FloatService;->mPreviewRecover:Z
 
+#by boba 04.03.2021
+#show preview
+:goto_show
+
     .line 115
     iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
 
     invoke-static {v1}, Lcom/car/dvr/FloatService;->access$600(Lcom/car/dvr/FloatService;)Landroid/widget/RelativeLayout;
 
     move-result-object v1
+
+#by boba 04.03.2021
+#show preview
+if-eqz v1, :cond_0
 
     invoke-virtual {v1, v3}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
@@ -187,6 +195,11 @@
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
+#by boba 03.03.2021
+#dvr float size
+iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
+invoke-static {v1}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatService;)V
+
     .line 118
     iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
 
@@ -203,11 +216,6 @@
 
     invoke-static {v1, v2}, Lcom/car/dvr/FloatService;->access$900(Lcom/car/dvr/FloatService;I)Z
 
-#by boba 03.03.2021
-#dvr float size
-iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
-invoke-static {v1}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatService;)V
-
     goto :goto_0
 
     .line 121
@@ -218,7 +226,10 @@ invoke-static {v1}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatS
 
     move-result v1
 
-    if-eqz v1, :cond_0
+#by boba 04.03.2021
+#show preview
+#    if-eqz v1, :cond_0
+if-eqz v1, :cond_show
 
     .line 122
     iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
@@ -272,12 +283,20 @@ invoke-static {v1}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatS
 
     iput-boolean v5, v1, Lcom/car/dvr/FloatService;->mPreviewRecover:Z
 
+#by boba 04.03.2021
+#show preview
+:goto_hide
+
     .line 128
     iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
 
     invoke-static {v1}, Lcom/car/dvr/FloatService;->access$600(Lcom/car/dvr/FloatService;)Landroid/widget/RelativeLayout;
 
     move-result-object v1
+
+#by boba 04.03.2021
+#show preview
+if-eqz v1, :cond_0
 
     invoke-virtual {v1, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
@@ -299,15 +318,30 @@ invoke-static {v1}, Lcom/car/dvr/FloatService;->access$showP(Lcom/car/dvr/FloatS
 
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 131
-    iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
-
-    invoke-static {v1}, Lcom/car/dvr/FloatService;->access$700(Lcom/car/dvr/FloatService;)V
-
 #by boba 03.03.2021
 #dvr float size
 iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
 invoke-static {v1}, Lcom/car/dvr/FloatService;->access$hideP(Lcom/car/dvr/FloatService;)V
 
+    .line 131
+    iget-object v1, p0, Lcom/car/dvr/FloatService$2;->this$0:Lcom/car/dvr/FloatService;
+
+    invoke-static {v1}, Lcom/car/dvr/FloatService;->access$700(Lcom/car/dvr/FloatService;)V
+
     goto/16 :goto_0
+
+#by boba 04.03.2021
+#show preview
+:cond_show
+const-string v1, "com.car.videorecorder.show_preview"
+invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+move-result v1
+if-eqz v1, :cond_hide
+goto :goto_show
+:cond_hide
+const-string v1, "com.car.videorecorder.hide_preview"
+invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+move-result v1
+if-eqz v1, :cond_0
+goto :goto_hide
 .end method

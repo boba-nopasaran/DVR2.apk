@@ -546,6 +546,7 @@ invoke-direct {p0}, Lcom/car/dvr/FloatService;->hideP()V
 .method private showP()V
 .locals 4
 iget-object v0, p0, Lcom/car/dvr/FloatService;->mParentView:Landroid/view/View;
+if-eqz v0, :exit
 invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 move-result-object v1
 const-string v2, "persist.dvr.float.width"
@@ -558,17 +559,20 @@ const/16 v3, 0xf0
 invoke-static {v2, v3}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 move-result v2
 iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+:exit
 return-void
 .end method
 
 .method private hideP()V
 .locals 3
 iget-object v0, p0, Lcom/car/dvr/FloatService;->mParentView:Landroid/view/View;
+if-eqz v0, :exit
 invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 move-result-object v1
 const/16 v2, -2
 iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
 iput v2, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
+:exit
 return-void
 .end method
 
@@ -744,6 +748,11 @@ return-void
 
     iput v3, v2, Landroid/view/WindowManager$LayoutParams;->x:I
 
+#by boba 04.03.2021
+#show preview
+int-to-float v3,v3
+iput v3, p0, Lcom/car/dvr/FloatService;->mStartX:F
+
     .line 314
     iget-object v2, p0, Lcom/car/dvr/FloatService;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
 
@@ -756,6 +765,11 @@ return-void
     move-result v3
 
     iput v3, v2, Landroid/view/WindowManager$LayoutParams;->y:I
+
+#by boba 04.03.2021
+#show preview
+int-to-float v3,v3
+iput v3, p0, Lcom/car/dvr/FloatService;->mStartY:F
 
     .line 315
     iget-object v2, p0, Lcom/car/dvr/FloatService;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
@@ -1026,6 +1040,13 @@ return-void
     const-string v2, "com.car.videorecorder.recording_stop"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+#by boba 04.03.2021
+#show preview
+const-string v2, "com.car.videorecorder.show_preview"
+invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+const-string v2, "com.car.videorecorder.hide_preview"
+invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 181
     iget-object v2, p0, Lcom/car/dvr/FloatService;->receiver:Landroid/content/BroadcastReceiver;
