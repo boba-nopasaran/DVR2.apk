@@ -177,7 +177,10 @@
     sput-boolean v0, Lcom/car/dvr/VideoInfo;->IS_LR_CAM_EXIST:Z
 
     .line 28
-    const-string v0, "ro.lrcam.record"
+#by boba 15.03.2021
+#lrcam record
+#    const-string v0, "ro.lrcam.record"
+const-string v0, "persist.lrcam.record"
 
     const-string v3, "0"
 
@@ -194,7 +197,10 @@
     sput-boolean v0, Lcom/car/dvr/VideoInfo;->IS_LR_CAM_RECORD:Z
 
     .line 29
-    const-string v0, "ro.lcam.record"
+#by boba 15.03.2021
+#lrcam record
+#    const-string v0, "ro.lcam.record"
+const-string v0, "persist.lcam.record"
 
     const-string v3, "0"
 
@@ -211,7 +217,10 @@
     sput-boolean v0, Lcom/car/dvr/VideoInfo;->IS_L_CAM_RECORD:Z
 
     .line 30
-    const-string v0, "ro.rcam.record"
+#by boba 15.03.2021
+#lrcam record
+#    const-string v0, "ro.rcam.record"
+const-string v0, "persist.rcam.record"
 
     const-string v3, "0"
 
