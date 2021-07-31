@@ -4131,6 +4131,14 @@
 
     invoke-static {v0, v11}, Lcom/car/dvr/DvrApplication;->speechTips(Landroid/content/Context;Ljava/lang/String;)V
 
+#by boba 17.05.2021
+#hud settings
+const-string v6, "persist.hud.enable"
+const/16 v8, 1
+invoke-static {v6, v8}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+move-result v6
+if-eqz v6, :nohud
+
 #by boba 11.08.2020
 #screensaver after stop preview
 new-instance v6, Landroid/content/Intent;
@@ -4138,6 +4146,8 @@ const-string v8, "com.car.hud.dismiss"
 invoke-direct {v6, v8}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 move-object/from16 v8, p0
 invoke-virtual {v8, v6}, Lcom/car/dvr/CameraActivity;->sendBroadcast(Landroid/content/Intent;)V	
+
+:nohud
 
     .line 2052
     invoke-virtual/range {p0 .. p0}, Lcom/car/dvr/CameraActivity;->finish()V
